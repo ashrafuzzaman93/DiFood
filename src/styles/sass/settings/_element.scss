@@ -1,0 +1,145 @@
+// Import google fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+// Global theme font.
+$font__primary: "Open Sans", sans-serif;
+$font__code: Consolas, "Courier New", monospace;
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background-color: $white;
+	color: $color__body;
+	font-display: swap;
+	-webkit-text-size-adjust: 100%;
+	-webkit-overflow-scrolling: touch;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+body,
+input,
+select,
+textarea {
+	color: $color__body;
+	font-family: $font__primary;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: $color_link;
+	transition: $transition;
+
+	&:hover {
+		color: lighten($color_link, 10);
+	}
+}
+
+strong,
+b {
+	font-weight: 700;
+	color: darken($color__body, 50%);
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+p {
+	margin: 0 0 2rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $color__heading;
+	font-family: $font__primary;
+	font-weight: 900;
+	margin: 0 0 2rem 0;
+
+	a {
+		color: inherit;
+	}
+}
+
+h1 {
+	font-size: 4.5rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3.6rem;
+}
+
+h4 {
+	font-size: 3rem;
+}
+
+h5 {
+	font-size: 2.6rem;
+}
+
+h5 {
+	font-size: 2rem;
+}
+
+sub {
+	font-size: 0.8rem;
+	position: relative;
+	top: 0.5rem;
+}
+
+sup {
+	font-size: 0.8rem;
+	position: relative;
+	top: -0.5rem;
+}
+
+blockquote {
+	border-left: 0.5rem solid $black;
+	font-style: italic;
+	margin: 0 0 2rem 0;
+	padding: 1rem;
+}
+
+code {
+	background: #dadada;
+	font-family: $font__code;
+	// font-size: 0.9rem;
+	margin: 0 0.25rem;
+	padding: 0.5rem 1rem;
+}
+
+pre {
+	-webkit-overflow-scrolling: touch;
+	font-family: $font__code;
+	// font-size: 0.9rem;
+	margin: 0 0 2rem 0;
+	width: 100%;
+
+	code {
+		display: block;
+		line-height: 1.75;
+		padding: 1.7rem 2.5rem;
+		overflow-x: auto;
+	}
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid #3b4f69;
+	margin: 2rem 0;
+}
