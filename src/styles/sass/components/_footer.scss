@@ -2,10 +2,29 @@
 	color: $color__dark_section_text;
 	background-color: $color__dark_section;
 	padding: 135px 0 58px;
+
+	@media (max-width: 767px) {
+		padding: 60px 0;
+	}
 }
 
 .footer-widget-wrap {
 	margin-bottom: 100px;
+
+	@media (max-width: 767px) {
+		margin-bottom: 60px;
+	}
+}
+
+.footer-widget-inner {
+	@media (max-width: 767px) {
+		margin-bottom: 50px;
+		text-align: center;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .footer-widget {

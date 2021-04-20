@@ -5,7 +5,7 @@ const Footer = () => {
 			<div className="container">
 				<div className="footer-widget-wrap">
 					<div className="row">
-						<div className="col-xs-12 col-sm-3">
+						<div className="col-xs-12 col-sm-3 footer-widget-inner">
 							<div className="footer-widget">
 								<h3>DiFood</h3>
 								<p>
@@ -15,7 +15,7 @@ const Footer = () => {
 							</div>
 						</div>
 
-						<div className="col-xs-12 col-sm-4 col-sm-offset-1">
+						<div className="col-xs-12 col-sm-4 col-sm-offset-1 footer-widget-inner">
 							<div className="footer-widget">
 								<h3>Help Links</h3>
 								<ul>
@@ -38,10 +38,14 @@ const Footer = () => {
 							</div>
 						</div>
 
-						<div className="col-xs-12 col-sm-4">
+						<div className="col-xs-12 col-sm-4 footer-widget-inner">
 							<div className="footer-widget">
 								<h3>Download App</h3>
-								<a href="/">
+								<a
+									href="https://www.apple.com/app-store/"
+									rel="noreferrer noopener"
+									target="_blank"
+								>
 									<img
 										src="./images/app-store-badge.png"
 										alt="App Store Badge"
@@ -50,7 +54,11 @@ const Footer = () => {
 									/>
 								</a>
 								<br />
-								<a href="/">
+								<a
+									href="https://play.google.com/store/apps"
+									rel="noreferrer noopener"
+									target="_blank"
+								>
 									<img
 										src="./images/google-play-badge.png"
 										alt="Google Play Badge"

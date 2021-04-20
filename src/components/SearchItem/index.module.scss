@@ -1,0 +1,107 @@
+.search__wrap {
+	margin-bottom: 165px;
+
+	@media (max-width: 767px) {
+		margin-bottom: 100px;
+	}
+
+	form {
+		background: #ffffff;
+		box-shadow: 0 30px 100px 0 rgba(6, 14, 119, 0.13);
+		border-radius: 3px;
+		height: 90px;
+		max-width: 855px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		@media (max-width: 767px) {
+			flex-flow: column wrap;
+			max-width: 100%;
+			height: auto;
+			padding: 20px 0;
+		}
+	}
+
+	.input__wrap {
+		position: relative;
+		height: 100%;
+		padding-left: 60px;
+
+		@media (max-width: 767px) {
+			margin-bottom: 20px;
+			padding-left: 35px;
+		}
+
+		&::after {
+			position: absolute;
+			left: 40px;
+			top: 50%;
+			content: "";
+			transform: translateY(-50%);
+
+			@media (max-width: 767px) {
+				left: 20px;
+			}
+		}
+
+		&:nth-child(1) {
+			flex-basis: 375px;
+
+			@media (max-width: 767px) {
+				flex-basis: 100%;
+				width: 100%;
+			}
+
+			&::after {
+				width: 18px;
+				height: 18px;
+				background-image: url("../../icons/Food.svg");
+			}
+		}
+
+		&:nth-child(2) {
+			flex-basis: calc(100% - 375px);
+			border-left: 1px solid #e1dbe6;
+			padding-right: 123px;
+
+			@media (max-width: 767px) {
+				flex-basis: 100%;
+				width: 100%;
+				border-left: 0;
+				padding-right: 15px;
+			}
+
+			&::after {
+				width: 15px;
+				height: 20px;
+				background-image: url("../../icons/Location.svg");
+			}
+		}
+	}
+
+	input[type="text"] {
+		width: 100%;
+		height: 100%;
+		padding: 15px;
+		border: 0;
+
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	.custom__btn {
+		position: absolute;
+		right: 12px;
+		height: 66px;
+		cursor: pointer;
+
+		@media (max-width: 767px) {
+			position: initial;
+			display: flex;
+			width: calc(100% - 40px);
+		}
+	}
+}
