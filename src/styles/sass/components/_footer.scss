@@ -1,0 +1,37 @@
+.site-footer {
+	color: $color__dark_section_text;
+	background-color: $color__dark_section;
+	padding: 135px 0 58px;
+}
+
+.footer-widget-wrap {
+	margin-bottom: 100px;
+}
+
+.footer-widget {
+	h3 {
+		color: #fff;
+		font-weight: 700;
+		font-size: 3rem;
+		letter-spacing: 0.27px;
+		line-height: 2em;
+		margin-bottom: 15px;
+	}
+
+	p {
+		font-size: 1.8rem;
+		line-height: 1.556em;
+		letter-spacing: 0.16px;
+	}
+
+	ul li a {
+		color: $color__dark_section_text;
+		font-size: 1.8rem;
+		line-height: 1.945em;
+		letter-spacing: 0.16px;
+
+		&:hover {
+			color: lighten($color__dark_section_text, 30);
+		}
+	}
+}

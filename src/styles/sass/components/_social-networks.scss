@@ -1,0 +1,40 @@
+.socials-networks {
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	li {
+		margin-right: 15px;
+	}
+
+	a {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		&.facebook-link {
+			background-color: #3b5998;
+		}
+
+		&.twitter-link {
+			background-color: #55acee;
+		}
+
+		&.linkedin-link {
+			background-color: #0077b5;
+		}
+
+		&.github-link {
+			background-color: #4078c0;
+		}
+	}
+}
