@@ -1,0 +1,45 @@
+.food__item {
+	background: #fff;
+	box-shadow: 0 15px 60px 0 rgba(6, 14, 119, 0.04);
+}
+
+.food__image_wrap {
+	position: relative;
+
+	a,
+	img {
+		display: block;
+	}
+
+	.food__discount {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		background: #ffffff;
+		box-shadow: 0 14px 40px 0 rgba(6, 14, 119, 0.15);
+		border-radius: 25px;
+		padding: 7px 13px;
+		font-family: OpenSans-Bold;
+		font-size: 14px;
+		color: #cc000e;
+		letter-spacing: 0.13px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.food__info_wrap {
+	padding: 30px 40px;
+
+	.food__title {
+		color: #000;
+		font-size: 2.3rem;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}

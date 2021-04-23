@@ -1,3 +1,34 @@
+$space: 0;
+@while $space <= 100 {
+	.mt-#{$space} {
+		margin-top: #{$space}px !important;
+	}
+	.mr-#{$space} {
+		margin-right: #{$space}px !important;
+	}
+	.mb-#{$space} {
+		margin-bottom: #{$space}px !important;
+	}
+	.ml-#{$space} {
+		margin-left: #{$space}px !important;
+	}
+
+	.pt-#{$space} {
+		padding-top: #{$space}px !important;
+	}
+	.pr-#{$space} {
+		padding-right: #{$space}px !important;
+	}
+	.pb-#{$space} {
+		padding-bottom: #{$space}px !important;
+	}
+	.pl-#{$space} {
+		padding-left: #{$space}px !important;
+	}
+
+	$space: $space + 5;
+}
+
 .text-center {
 	text-align: center;
 }

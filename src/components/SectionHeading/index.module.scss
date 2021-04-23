@@ -1,0 +1,32 @@
+.section__heading {
+	position: relative;
+	padding-bottom: 13px;
+
+	&::before,
+	&::after {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		width: 45px;
+		height: 2px;
+		content: "";
+		background: #0f60ca;
+		border-radius: 30px;
+	}
+
+	&::before {
+		bottom: 5px;
+		transform: translateX(-50%);
+	}
+
+	&_title {
+		font-size: 4.5rem;
+		letter-spacing: 0.41px;
+		line-height: 1.333em;
+		margin-bottom: 13px;
+
+		@media (max-width: 767px) {
+			font-size: 3rem;
+		}
+	}
+}
