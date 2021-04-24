@@ -1,4 +1,8 @@
 .primary__navigation {
+	@media (max-width: 767px) {
+		display: none;
+	}
+
 	ul {
 		display: flex;
 		align-items: center;
