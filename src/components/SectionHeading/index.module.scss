@@ -1,4 +1,8 @@
 .section__heading {
+	@media (max-width: 767px) {
+		text-align: center;
+	}
+
 	&.line {
 		position: relative;
 		padding-bottom: 13px;

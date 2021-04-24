@@ -1,0 +1,44 @@
+.citie {
+	display: block;
+	width: 100%;
+	box-shadow: 0 25px 60px 0 rgba(6, 14, 119, 0.16);
+	border-radius: 10px;
+	overflow: hidden;
+
+	&:hover {
+		figure {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	figure {
+		position: relative;
+
+		img {
+			display: block;
+			width: 100%;
+			transition: all 0.2s;
+		}
+
+		figcaption {
+			display: flex;
+			align-items: flex-end;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			padding: 25px 36px;
+
+			h4 {
+				color: #fff;
+				font-size: 2.3rem;
+				font-weight: 700;
+				line-height: 1.391em;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
