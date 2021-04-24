@@ -1,0 +1,25 @@
+.how__works_wrap {
+	position: relative;
+	padding: 208px 0 43px;
+	margin-top: 110px;
+	background-image: linear-gradient(270deg, #d17aff 0%, #816dff 100%);
+
+	@media (max-width: 767px) {
+		padding-top: 150px;
+	}
+
+	.pizza__section_devider {
+		width: 363px;
+		height: 348px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: -190px;
+
+		@media (max-width: 767px) {
+			width: 263px;
+			height: 252px;
+			top: -150px;
+		}
+	}
+}

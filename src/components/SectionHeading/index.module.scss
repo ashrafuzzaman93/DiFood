@@ -1,22 +1,24 @@
 .section__heading {
-	position: relative;
-	padding-bottom: 13px;
+	&.line {
+		position: relative;
+		padding-bottom: 13px;
 
-	&::before,
-	&::after {
-		position: absolute;
-		left: 50%;
-		bottom: 0;
-		width: 45px;
-		height: 2px;
-		content: "";
-		background: #0f60ca;
-		border-radius: 30px;
-	}
+		&::before,
+		&::after {
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			width: 45px;
+			height: 2px;
+			content: "";
+			background: #0f60ca;
+			border-radius: 30px;
+		}
 
-	&::before {
-		bottom: 5px;
-		transform: translateX(-50%);
+		&::before {
+			bottom: 5px;
+			transform: translateX(-50%);
+		}
 	}
 
 	&_title {
@@ -27,6 +29,19 @@
 
 		@media (max-width: 767px) {
 			font-size: 3rem;
+		}
+	}
+
+	&.white__color {
+		&.line {
+			&::before,
+			&::after {
+				background: #fff;
+			}
+		}
+
+		.section__heading_title {
+			color: #fff;
 		}
 	}
 }
