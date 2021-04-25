@@ -1,5 +1,24 @@
 .foods__wrap {
+	position: relative;
 	padding: 36px 0 75px;
+
+	&::after {
+		position: absolute;
+		left: 0;
+		top: 285px;
+		width: 100%;
+		height: 1472px;
+		content: "";
+		clip-path: polygon(0 17%, 100% 0, 100% 83%, 0% 100%);
+		opacity: 0.07;
+		background-image: linear-gradient(
+			123deg,
+			#e02cd3 0%,
+			#6243eb 45%,
+			#0952ff 100%
+		);
+		z-index: -1;
+	}
 
 	@media (max-width: 767px) {
 		padding-bottom: 30px;

@@ -1,7 +1,8 @@
 const menus = [
-	{ name: "Get Work", href: "/" },
-	{ name: "Get Paid", href: "/" },
-	{ name: "Get Started", href: "/" },
+	{ name: "Delivery", href: "/" },
+	{ name: "About us", href: "/" },
+	{ name: "Menu", href: "/" },
+	{ name: "Contact", href: "/" },
 ];
 
 const Navigation = () => {
@@ -15,7 +16,7 @@ const Navigation = () => {
 				))}
 				<li>
 					<a href="/" className="btn btn--primary btn--small btn--round">
-						Chat Now
+						Sign in
 					</a>
 				</li>
 			</ul>
