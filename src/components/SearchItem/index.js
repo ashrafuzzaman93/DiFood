@@ -34,6 +34,8 @@ const SearchItem = () => {
 		}
 	};
 
+	const handleSubmit = (event) => event.preventDefault();
+
 	const item = searchData.map((item) => (
 		<div key={item._id} className={styles.search__single_item}>
 			<div className={styles.search__item_pic}>
@@ -52,7 +54,7 @@ const SearchItem = () => {
 
 	return (
 		<div className={styles.search__wrap}>
-			<form>
+			<form onSubmit={handleSubmit}>
 				<div className={styles.input__wrap}>
 					<input
 						type="search"
