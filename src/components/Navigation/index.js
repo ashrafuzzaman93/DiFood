@@ -5,9 +5,9 @@ const menus = [
 	{ name: "Contact", href: "/" },
 ];
 
-const Navigation = () => {
+const Navigation = ({ humberger }) => {
 	return (
-		<nav className="primary__navigation">
+		<nav className={`primary__navigation ${humberger ? "nav-open" : ""}`}>
 			<ul>
 				{menus.map((menu) => (
 					<li key={menu.name}>
