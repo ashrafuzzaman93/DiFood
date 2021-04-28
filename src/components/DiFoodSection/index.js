@@ -4,7 +4,7 @@ import styles from "./index.module.scss";
 
 const DiFoodSection = () => {
 	return (
-		<section className={styles.foods__wrap}>
+		<section className={styles.foods__wrap} id="difood">
 			<div className="container">
 				<div className="row">
 					<div className="col-xs-12">
