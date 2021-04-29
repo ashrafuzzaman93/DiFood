@@ -1,5 +1,5 @@
-import SearchItem from "../SearchItem";
-import ArrowBottom from "../../icons/ArrowBottom.svg";
+import SearchItem from "../../common/SearchItem";
+import ArrowBottom from "../../../icons/ArrowBottom.svg";
 import styles from "./index.module.scss";
 
 const Banner = () => {

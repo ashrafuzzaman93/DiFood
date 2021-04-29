@@ -1,11 +1,11 @@
-import SectionHeading from "../SectionHeading";
-import InfoCard from "../InfoCard";
+import SectionHeading from "../../common/SectionHeading";
+import InfoCard from "../../common/InfoCard";
 import styles from "./index.module.scss";
 
-import ThumsUp from "../../icons/thumbs-up.svg";
-import UserReview from "../../icons/user-review.svg";
-import Graph from "../../icons/graph.svg";
-import Booking from "../../icons/booking.svg";
+import ThumsUp from "../../../icons/thumbs-up.svg";
+import UserReview from "../../../icons/user-review.svg";
+import Graph from "../../../icons/graph.svg";
+import Booking from "../../../icons/booking.svg";
 
 const HowWorks = () => {
 	return (

@@ -1,30 +1,29 @@
 import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import Rating from "../Rating";
-import data from "../../data/data";
+import data from "../../../data/data";
 import styles from "./index.module.scss";
 
 const SearchItem = () => {
 	let [isSearcing, setSearching] = useState(false);
-	let [searchData, findSearchData] = useState([]);
-	// let [displayMessage, setMessage] = useState("");
+	let [searchData, setSearchData] = useState([]);
 
 	const handleChange = (event) => {
-		const searchQuery = event.target.value;
+		const searchQuery = event.target.value.toLowerCase();
 
 		if (searchQuery !== "" && searchQuery.length >= 3) {
 			setSearching((isSearcing = true));
 
-			findSearchData(() => {
+			setSearchData(() => {
 				let filterData;
 				if (event.target.name === "food") {
 					filterData = data.properties.filter((item) =>
-						item.name.includes(event.target.value)
+						item.name.toLowerCase().includes(searchQuery)
 					);
 				} else {
 					if (event.target.name === "location") {
 						filterData = data.properties.filter((item) =>
-							item.city.includes(event.target.value)
+							item.city.toLowerCase().includes(searchQuery)
 						);
 					}
 				}
@@ -54,6 +53,12 @@ const SearchItem = () => {
 			</div>
 		</div>
 	));
+
+	const itemEmpty = (
+		<div className={`${styles.search__single_item} ${styles.empty_item}`}>
+			<p className="mb-0">Nothing found! Try with another keyword!</p>
+		</div>
+	);
 
 	return (
 		<div className={styles.search__wrap}>
@@ -90,7 +95,9 @@ const SearchItem = () => {
 				classNames="fade"
 				unmountOnExit
 			>
-				<div className={styles.display_search_items}>{item}</div>
+				<div className={styles.display_search_items}>
+					{searchData.length > 0 ? item : itemEmpty}
+				</div>
 			</CSSTransition>
 		</div>
 	);

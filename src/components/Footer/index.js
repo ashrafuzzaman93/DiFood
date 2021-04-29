@@ -1,4 +1,4 @@
-import SocialNetworks from "../SocialNetworks";
+import SocialNetworks from "../common/SocialNetworks";
 const Footer = () => {
 	return (
 		<footer className="site-footer">

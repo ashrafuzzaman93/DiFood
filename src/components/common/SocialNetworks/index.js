@@ -1,7 +1,7 @@
-import Facebook from "../../icons/Facebook.svg";
-import Twitter from "../../icons/Twitter.svg";
-import Linkedin from "../../icons/Linkedin.svg";
-import Github from "../../icons/Github.svg";
+import Facebook from "../../../icons/Facebook.svg";
+import Twitter from "../../../icons/Twitter.svg";
+import Linkedin from "../../../icons/Linkedin.svg";
+import Github from "../../../icons/Github.svg";
 
 const links = [
 	{ title: "Facebook", href: "https://www.facebook.com/", src: Facebook },

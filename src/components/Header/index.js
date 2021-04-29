@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navigation from "../Navigation";
+import Navigation from "../common/Navigation";
 const Header = () => {
 	let [humberger, handleHubberger] = useState(false);
 

@@ -1,5 +1,5 @@
-import SectionHeading from "../SectionHeading";
-import Citie from "../Citie";
+import SectionHeading from "../../common/SectionHeading";
+import Citie from "../../common/Citie";
 import styles from "./index.module.scss";
 
 const CitiesSection = () => {
