@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
+import Rating from "../Rating";
 import data from "../../data/data";
 import styles from "./index.module.scss";
 
 const SearchItem = () => {
 	let [isSearcing, setSearching] = useState(false);
 	let [searchData, findSearchData] = useState([]);
+	// let [displayMessage, setMessage] = useState("");
 
 	const handleChange = (event) => {
 		const searchQuery = event.target.value;
@@ -47,6 +49,7 @@ const SearchItem = () => {
 				<h3>
 					<a href="/">{item.name}</a>
 				</h3>
+				<Rating rating={item.rating.toString()} id={item._id} classes="mb-5" />
 				<p>{item.address}</p>
 			</div>
 		</div>

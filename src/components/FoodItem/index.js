@@ -24,7 +24,7 @@ const FoodItem = ({
 					<a href={url}>{title}</a>
 				</h3>
 
-				<Rating ratingValue={ratingStar} ratingID={postId} />
+				<Rating rating={ratingStar} id={postId} classes="mb-15" />
 
 				<p>{excerpt}</p>
 			</div>

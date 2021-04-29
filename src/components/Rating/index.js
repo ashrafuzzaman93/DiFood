@@ -1,12 +1,12 @@
 import styles from "./index.module.scss";
 
-const Rating = ({ ratingValue, ratingID }) => {
+const Rating = ({ rating, id, classes }) => {
 	const handleChange = (event) => {
-		console.log(event.target.name, event.target.checked);
-		event.target.name = event.target.checked;
+		event.target.checked = event.target.name;
 	};
+
 	return (
-		<div className={styles.rating__wrap}>
+		<div className={`${styles.rating__wrap} ${classes}`}>
 			<svg
 				aria-hidden="true"
 				style={{
@@ -30,171 +30,156 @@ const Rating = ({ ratingValue, ratingID }) => {
 			</svg>
 			{/* ./svg-sprites */}
 
-			<div className={styles.comment_stars}>
+			<div className={styles.rating_stars}>
 				<input
-					className={styles.comment_stars_input}
+					className={styles.rating_stars_input}
 					type="radio"
-					name={`rating${ratingValue}`}
+					name={`rating${id}`}
 					value="5"
 					onChange={handleChange}
-					id={`rating-5${ratingID}`}
-					defaultChecked={ratingValue === "5" ? "checked" : ""}
+					id={`rating-5${id}`}
+					defaultChecked={rating === "5" ? "checked" : ""}
 				/>
-				<label
-					className={styles.comment_stars_view}
-					htmlFor={`rating-5${ratingID}`}
-				>
+				<label className={styles.rating_stars_view} htmlFor={`rating-5${id}`}>
 					<svg className={`${styles.icon} ${styles.icon_star}`}>
 						<use xlinkHref="#icon-star"></use>
 					</svg>
 				</label>
 				<input
-					className={styles.comment_stars_input}
+					className={styles.rating_stars_input}
 					type="radio"
-					name={`rating${ratingValue}`}
+					name={`rating${id}`}
 					value="4.5"
 					onChange={handleChange}
-					id={`rating-4.5${ratingID}`}
-					defaultChecked={ratingValue === "4.5" ? "checked" : ""}
+					id={`rating-4.5${id}`}
+					defaultChecked={rating === "4.5" ? "checked" : ""}
 				/>
 				<label
-					className={`${styles.comment_stars_view} ${styles.is_half}`}
-					htmlFor={`rating-4.5${ratingID}`}
+					className={`${styles.rating_stars_view} ${styles.is_half}`}
+					htmlFor={`rating-4.5${id}`}
 				>
 					<svg className={`${styles.icon} ${styles.icon_star_half}`}>
 						<use xlinkHref="#icon-star-half"></use>
 					</svg>
 				</label>
 				<input
-					className={styles.comment_stars_input}
+					className={styles.rating_stars_input}
 					type="radio"
-					name={`rating${ratingValue}`}
+					name={`rating${id}`}
 					value="4"
 					onChange={handleChange}
-					id={`rating-4${ratingID}`}
-					defaultChecked={ratingValue === "4" ? "checked" : ""}
+					id={`rating-4${id}`}
+					defaultChecked={rating === "4" ? "checked" : ""}
 				/>
-				<label
-					className={styles.comment_stars_view}
-					htmlFor={`rating-4${ratingID}`}
-				>
+				<label className={styles.rating_stars_view} htmlFor={`rating-4${id}`}>
 					<svg className={`${styles.icon} ${styles.icon_star}`}>
 						<use xlinkHref="#icon-star"></use>
 					</svg>
 				</label>
 				<input
-					className={styles.comment_stars_input}
+					className={styles.rating_stars_input}
 					type="radio"
-					name={`rating${ratingValue}`}
+					name={`rating${id}`}
 					value="3.5"
 					onChange={handleChange}
-					id={`rating-3.5${ratingID}`}
-					defaultChecked={ratingValue === "3.5" ? "checked" : ""}
+					id={`rating-3.5${id}`}
+					defaultChecked={rating === "3.5" ? "checked" : ""}
 				/>
 				<label
-					className={`${styles.comment_stars_view} ${styles.is_half}`}
-					htmlFor={`rating-3.5${ratingID}`}
+					className={`${styles.rating_stars_view} ${styles.is_half}`}
+					htmlFor={`rating-3.5${id}`}
 				>
 					<svg className={`${styles.icon} ${styles.icon_star_half}`}>
 						<use xlinkHref="#icon-star-half"></use>
 					</svg>
 				</label>
 				<input
-					className={styles.comment_stars_input}
+					className={styles.rating_stars_input}
 					type="radio"
-					name={`rating${ratingValue}`}
+					name={`rating${id}`}
 					value="3"
 					onChange={handleChange}
-					id={`rating-3${ratingID}`}
-					defaultChecked={ratingValue === "3" ? "checked" : ""}
+					id={`rating-3${id}`}
+					defaultChecked={rating === "3" ? "checked" : ""}
 				/>
-				<label
-					className={styles.comment_stars_view}
-					htmlFor={`rating-3${ratingID}`}
-				>
+				<label className={styles.rating_stars_view} htmlFor={`rating-3${id}`}>
 					<svg className={`${styles.icon} ${styles.icon_star}`}>
 						<use xlinkHref="#icon-star"></use>
 					</svg>
 				</label>
 				<input
-					className={styles.comment_stars_input}
+					className={styles.rating_stars_input}
 					type="radio"
-					name={`rating${ratingValue}`}
+					name={`rating${id}`}
 					value="2.5"
 					onChange={handleChange}
-					id={`rating-2.5${ratingID}`}
-					defaultChecked={ratingValue === "2.5" ? "checked" : ""}
+					id={`rating-2.5${id}`}
+					defaultChecked={rating === "2.5" ? "checked" : ""}
 				/>
 				<label
-					className={`${styles.comment_stars_view} ${styles.is_half}`}
-					htmlFor={`rating-2.5${ratingID}`}
+					className={`${styles.rating_stars_view} ${styles.is_half}`}
+					htmlFor={`rating-2.5${id}`}
 				>
 					<svg className={`${styles.icon} ${styles.icon_star_half}`}>
 						<use xlinkHref="#icon-star-half"></use>
 					</svg>
 				</label>
 				<input
-					className={styles.comment_stars_input}
+					className={styles.rating_stars_input}
 					type="radio"
-					name={`rating${ratingValue}`}
+					name={`rating${id}`}
 					value="2"
 					onChange={handleChange}
-					id={`rating-2${ratingID}`}
-					defaultChecked={ratingValue === "2" ? "checked" : ""}
+					id={`rating-2${id}`}
+					defaultChecked={rating === "2" ? "checked" : ""}
 				/>
-				<label
-					className={styles.comment_stars_view}
-					htmlFor={`rating-2${ratingID}`}
-				>
+				<label className={styles.rating_stars_view} htmlFor={`rating-2${id}`}>
 					<svg className={`${styles.icon} ${styles.icon_star}`}>
 						<use xlinkHref="#icon-star"></use>
 					</svg>
 				</label>
 				<input
-					className={styles.comment_stars_input}
+					className={styles.rating_stars_input}
 					type="radio"
-					name={`rating${ratingValue}`}
+					name={`rating${id}`}
 					value="1.5"
 					onChange={handleChange}
-					id={`rating-1.5${ratingID}`}
-					defaultChecked={ratingValue === "1.5" ? "checked" : ""}
+					id={`rating-1.5${id}`}
+					defaultChecked={rating === "1.5" ? "checked" : ""}
 				/>
 				<label
-					className={`${styles.comment_stars_view} ${styles.is_half}`}
-					htmlFor={`rating-1.5${ratingID}`}
+					className={`${styles.rating_stars_view} ${styles.is_half}`}
+					htmlFor={`rating-1.5${id}`}
 				>
 					<svg className={`${styles.icon} ${styles.icon_star_half}`}>
 						<use xlinkHref="#icon-star-half"></use>
 					</svg>
 				</label>
 				<input
-					className={styles.comment_stars_input}
+					className={styles.rating_stars_input}
 					type="radio"
-					name={`rating${ratingValue}`}
+					name={`rating${id}`}
 					value="1"
 					onChange={handleChange}
-					id={`rating-1${ratingID}`}
-					defaultChecked={ratingValue === "1" ? "checked" : ""}
+					id={`rating-1${id}`}
+					defaultChecked={rating === "1" ? "checked" : ""}
 				/>
-				<label
-					className={styles.comment_stars_view}
-					htmlFor={`rating-1${ratingID}`}
-				>
+				<label className={styles.rating_stars_view} htmlFor={`rating-1${id}`}>
 					<svg className={`${styles.icon} ${styles.icon_star}`}>
 						<use xlinkHref="#icon-star"></use>
 					</svg>
 				</label>
 				<input
-					className={styles.comment_stars_input}
+					className={styles.rating_stars_input}
 					type="radio"
-					name={`rating${ratingValue}`}
+					name={`rating${id}`}
 					value="0.5"
 					onChange={handleChange}
-					id={`rating-0.5${ratingID}`}
+					id={`rating-0.5${id}`}
 				/>
 				<label
-					className={`${styles.comment_stars_view} ${styles.is_half}`}
-					htmlFor={`rating-0.5${ratingID}`}
+					className={`${styles.rating_stars_view} ${styles.is_half}`}
+					htmlFor={`rating-0.5${id}`}
 				>
 					<svg className={`${styles.icon} ${styles.icon_star_half}`}>
 						<use xlinkHref="#icon-star-half"></use>

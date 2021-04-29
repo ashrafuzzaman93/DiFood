@@ -2,7 +2,7 @@ const data = {
 	properties: [
 		{
 			_id: "73031",
-			name: "Hamburger",
+			name: "Hamburger - Nando's",
 			price: 230,
 			picture: "/images/food01.png",
 			city: "Dhaka",
@@ -11,7 +11,7 @@ const data = {
 		},
 		{
 			_id: "98688",
-			name: "Cheeseburger",
+			name: "Cheeseburger - Khana Khazana",
 			price: 250,
 			picture: "/images/food02.png",
 			city: "Sylhet",
@@ -20,7 +20,7 @@ const data = {
 		},
 		{
 			_id: "28481",
-			name: "Sandwich",
+			name: "Sandwich - Thai Kitchen",
 			price: 140,
 			picture: "/images/food03.png",
 			city: "Chittagong",
@@ -29,7 +29,7 @@ const data = {
 		},
 		{
 			_id: "19692",
-			name: "Milk shake",
+			name: "Milk shake - BBQ Bangladesh",
 			price: 220,
 			picture: "/images/food04.png",
 			city: "Rajshahi",
@@ -38,7 +38,7 @@ const data = {
 		},
 		{
 			_id: "48450",
-			name: "Muffin",
+			name: "Muffin - Eden",
 			price: 170,
 			picture: "/images/food05.png",
 			city: "Rangpur",
@@ -47,7 +47,7 @@ const data = {
 		},
 		{
 			_id: "32415",
-			name: "Burrito",
+			name: "Burrito - Just Juice Bangladesh",
 			price: 130,
 			picture: "/images/food06.png",
 			city: "Sylhet",
@@ -56,7 +56,7 @@ const data = {
 		},
 		{
 			_id: "99137",
-			name: "Pizza",
+			name: "Pizza - Bella Italia",
 			price: 290,
 			picture: "/images/food01.png",
 			city: "Chittagong",
@@ -65,7 +65,7 @@ const data = {
 		},
 		{
 			_id: "55236",
-			name: "Taco",
+			name: "Taco - Spitfire",
 			price: 50,
 			picture: "/images/food02.png",
 			city: "Dhaka",
@@ -74,7 +74,7 @@ const data = {
 		},
 		{
 			_id: "14008",
-			name: "Noodle",
+			name: "Noodle - Arabian Grill & Platter",
 			price: 200,
 			picture: "/images/food03.png",
 			city: "Rangpur",
@@ -83,7 +83,7 @@ const data = {
 		},
 		{
 			_id: "14390",
-			name: "Fried chicken",
+			name: "Fried chicken - Spaghetti Jazz",
 			price: 400,
 			picture: "/images/food04.png",
 			city: "RajShahi",
@@ -92,7 +92,7 @@ const data = {
 		},
 		{
 			_id: "66986",
-			name: "Donuts",
+			name: "Donuts - Brews & Bites",
 			price: 250,
 			picture: "/images/food05.png",
 			city: "Sylhet",
@@ -101,7 +101,7 @@ const data = {
 		},
 		{
 			_id: "80816",
-			name: "Baguette",
+			name: "Baguette - The Chocolate Room",
 			price: 190,
 			picture: "/images/food06.png",
 			city: "Rangpur",
