@@ -16,7 +16,13 @@ const FoodItem = ({
 		<div className={styles.food__item}>
 			<div className={styles.food__image_wrap}>
 				<a href={url}>
-					<img src={src} alt={title} width={width} height={height} />
+					<img
+						src={src}
+						alt={title}
+						width={width}
+						height={height}
+						loading="lazy"
+					/>
 				</a>
 				<span className={styles.food__discount}>{discount}</span>
 			</div>

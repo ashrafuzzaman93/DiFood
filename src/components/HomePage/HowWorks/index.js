@@ -16,6 +16,7 @@ const HowWorks = () => {
 					alt="pizza"
 					width="363"
 					height="348"
+					loading="lazy"
 				/>
 			</div>
 

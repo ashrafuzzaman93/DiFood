@@ -52,6 +52,7 @@ const SocialNetworks = () => {
 								alt={link.title}
 								width={link.width}
 								height={link.height}
+								loading="lazy"
 							/>
 						</a>
 					</li>

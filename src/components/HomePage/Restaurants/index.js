@@ -1,23 +1,28 @@
+import React, { lazy, Suspense } from "react";
 import SectionHeading from "../../common/SectionHeading";
-import FoodItem from "../../common/FoodItem";
+import Loader from "../../common/Loader";
 import styles from "./index.module.scss";
 import data from "../../../data/data";
+
+const FoodItem = lazy(() => import("../../common/FoodItem"));
 
 const Restaurants = () => {
 	const dataSlice = data.properties.slice(6);
 	const item = dataSlice.map((item) => (
 		<div className="col-sm-4 col-xs-12 mb-30" key={item._id}>
-			<FoodItem
-				url={item.slug}
-				src={item.picture}
-				width="363"
-				height="211"
-				discount={item.discount}
-				title={item.name}
-				postId={item._id}
-				ratingStar={item.rating.toString()}
-				excerpt={item.address}
-			/>
+			<Suspense fallback={<Loader />}>
+				<FoodItem
+					url={item.slug}
+					src={item.picture}
+					width="363"
+					height="211"
+					discount={item.discount}
+					title={item.name}
+					postId={item._id}
+					ratingStar={item.rating.toString()}
+					excerpt={item.address}
+				/>
+			</Suspense>
 		</div>
 	));
 

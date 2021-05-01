@@ -15,7 +15,9 @@ const Banner = () => {
 								<span className="highlight-text"> restaurant</span>
 							</h1>
 						</div>
+
 						<SearchItem />
+
 						<div className={`text-center ${styles.scroll__down}`}>
 							<a href="#difood">
 								<img

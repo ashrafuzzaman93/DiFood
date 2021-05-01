@@ -4,7 +4,13 @@ const Citie = ({ citie, url, src, width, height }) => {
 	return (
 		<a href={url} className={styles.citie}>
 			<figure>
-				<img src={src} width={width} height={height} alt={citie} />
+				<img
+					src={src}
+					width={width}
+					height={height}
+					alt={citie}
+					loading="lazy"
+				/>
 				<figcaption>
 					<h3>{citie}</h3>
 				</figcaption>

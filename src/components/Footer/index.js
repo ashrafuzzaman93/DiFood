@@ -51,6 +51,7 @@ const Footer = () => {
 										alt="App Store Badge"
 										width="168"
 										height="50"
+										loading="lazy"
 									/>
 								</a>
 								<br />
@@ -64,6 +65,7 @@ const Footer = () => {
 										alt="Google Play Badge"
 										width="168"
 										height="50"
+										loading="lazy"
 									/>
 								</a>
 							</div>

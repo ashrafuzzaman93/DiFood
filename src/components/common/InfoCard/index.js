@@ -18,7 +18,13 @@ const InfoCard = ({
 				className={styles.info__card_icon}
 				style={{ backgroundImage: gradient }}
 			>
-				<img src={src} alt={title} width={width} height={height} />
+				<img
+					src={src}
+					alt={title}
+					width={width}
+					height={height}
+					loading="lazy"
+				/>
 			</span>
 			<h3>{title}</h3>
 			<p>{description}</p>
