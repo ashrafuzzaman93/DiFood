@@ -18,7 +18,12 @@ const Banner = () => {
 						<SearchItem />
 						<div className={`text-center ${styles.scroll__down}`}>
 							<a href="#difood">
-								<img src={ArrowBottom} alt="scroll down" />
+								<img
+									src={ArrowBottom}
+									alt="scroll down"
+									width="18"
+									height="10"
+								/>
 							</a>
 						</div>
 					</div>

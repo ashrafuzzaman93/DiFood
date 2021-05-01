@@ -10,6 +10,8 @@ const DiFoodSection = () => {
 			<FoodItem
 				url={item.slug}
 				src={item.picture}
+				width="363"
+				height="211"
 				discount={item.discount}
 				title={item.name}
 				postId={item._id}

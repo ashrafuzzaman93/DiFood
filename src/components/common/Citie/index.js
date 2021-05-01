@@ -6,7 +6,7 @@ const Citie = ({ citie, url, src, width, height }) => {
 			<figure>
 				<img src={src} width={width} height={height} alt={citie} />
 				<figcaption>
-					<h4>{citie}</h4>
+					<h3>{citie}</h3>
 				</figcaption>
 			</figure>
 		</a>

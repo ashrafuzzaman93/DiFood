@@ -1,5 +1,13 @@
 import styles from "./index.module.scss";
-const InfoCard = ({ gradient, src, title, description, isWhiteColor }) => {
+const InfoCard = ({
+	gradient,
+	src,
+	width,
+	height,
+	title,
+	description,
+	isWhiteColor,
+}) => {
 	return (
 		<div
 			className={`${styles.info__card} ${
@@ -10,7 +18,7 @@ const InfoCard = ({ gradient, src, title, description, isWhiteColor }) => {
 				className={styles.info__card_icon}
 				style={{ backgroundImage: gradient }}
 			>
-				<img src={src} alt={title} />
+				<img src={src} alt={title} width={width} height={height} />
 			</span>
 			<h3>{title}</h3>
 			<p>{description}</p>

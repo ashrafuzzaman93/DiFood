@@ -20,6 +20,7 @@ const Header = () => {
 
 							<button
 								className={`humberger ${humberger ? "humberger-open" : ""}`}
+								aria-label="Toggle navigation"
 								onClick={() => handleHubberger((humberger = !humberger))}
 							>
 								<span></span>

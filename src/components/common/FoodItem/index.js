@@ -4,6 +4,8 @@ import Rating from "../Rating";
 const FoodItem = ({
 	url,
 	src,
+	width,
+	height,
 	discount,
 	title,
 	postId,
@@ -14,7 +16,7 @@ const FoodItem = ({
 		<div className={styles.food__item}>
 			<div className={styles.food__image_wrap}>
 				<a href={url}>
-					<img src={src} alt={title} />
+					<img src={src} alt={title} width={width} height={height} />
 				</a>
 				<span className={styles.food__discount}>{discount}</span>
 			</div>
